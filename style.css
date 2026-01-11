@@ -460,12 +460,38 @@ section p {
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 30px;
-  border-left: 4px solid var(--accent);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.opensource-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--primary), var(--secondary));
+  transform: scaleY(0);
+  transition: transform 0.4s ease;
+}
+
+.opensource-content:hover::before {
+  transform: scaleY(1);
+}
+
+.opensource-content:hover {
+  transform: translateX(8px);
+  border-color: var(--primary);
+  box-shadow: 0 15px 40px var(--shadow);
 }
 
 .opensource-content p {
   margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
 }
 
 .opensource-content a {
@@ -478,6 +504,8 @@ section p {
   font-weight: 600;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px var(--shadow);
+  position: relative;
+  z-index: 1;
 }
 
 .opensource-content a:hover {
