@@ -7,169 +7,197 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<script src="script.js"></script>
-
 <body>
+  <div class="bg-animation"></div>
 
-  <!-- HEADER -->
-  <header class="hero">
-  <h1>Mohit Raj Saxena</h1>
-  <p class="tagline">
-    Software Developer • Web • Backend • DevOps
-  </p>
-    <!-- 🔗 INSERT LINKS BELOW -->
-    <div class="hero-links">
-      <a href="https://www.linkedin.com/in/mohit-raj-saxena-a523692b9" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/Mohit-Raj-Saxena" target="_blank">GitHub</a> |
-      <a href="mailto:rajmohitsaxena@gmail.com">rajmohitsaxena@gmail.com</a> |
-      <span>+91-8130782959</span>
-    </div>
-  </header>
+  <!-- Theme Toggle Button -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+    <span class="sun-icon">☀️</span>
+    <span class="moon-icon">🌙</span>
+  </button>
 
-  <!-- PROFILE -->
-  <section>
-    <h2>Profile</h2>
-    <p>
-      Driven web development enthusiast passionate about education, creativity,
-      and problem-solving. Eager to learn new technologies and contribute to
-      impactful projects in collaborative environments.
-    </p>
-  </section>
+  <div class="container">
+    <!-- HEADER -->
+    <header class="hero">
+      <div class="hero-content">
+        <h1>Mohit Raj Saxena</h1>
+        <p class="tagline">
+          Software Developer • Web • Backend • DevOps
+        </p>
+        
+        <!-- Resume Download Button -->
+        <a href="resume.pdf" class="resume-btn" download>
+          <span class="download-icon">📄</span>
+          Download Resume
+        </a>
 
-  <section>
-  <h2>Why Me?</h2>
-  <p>
-    I enjoy building real-world applications that combine clean UI,
-    scalable backend systems, and modern DevOps practices.
-    I actively contribute to open source and continuously improve my skills.
-  </p>
-</section>
+        <div class="hero-links">
+          <a href="https://www.linkedin.com/in/mohit-raj-saxena-a523692b9" target="_blank">LinkedIn</a>
+          <a href="https://github.com/Mohit-Raj-Saxena" target="_blank">GitHub</a>
+          <a href="mailto:rajmohitsaxena@gmail.com">Email</a>
+          <span>+91-8130782959</span>
+        </div>
+      </div>
+    </header>
 
-
-  <!-- EDUCATION -->
-  <section>
-    <h2>Education</h2>
-
-    <div class="item">
-      <h3>JSS Academy of Technical Education, Noida</h3>
-      <p>B.Tech in Computer Science & Engineering (2021 – 2025)</p>
-      <p><b>GPA:</b> 7.99 / 10.0</p>
-    </div>
-
-    <div class="item">
-      <h3>Children’s Academy, Ghaziabad</h3>
-      <p>Higher Secondary Certificate (2020 – 2021)</p>
-      <p><b>Score:</b> 95.8%</p>
-    </div>
-
-    <div class="item">
-      <h3>Children’s Academy, Ghaziabad</h3>
-      <p>Secondary School Certificate (2018 – 2019)</p>
-      <p><b>Score:</b> 94.6%</p>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section>
-    <h2>Projects</h2>
-
-    <div class="project">
-      <h3>News-Journal</h3>
+    <!-- PROFILE -->
+    <section>
+      <h2>Profile</h2>
       <p>
-        Created a dynamic news application providing real-time headlines using
-        external APIs with category-based filtering and responsive UI.
+        Driven web development enthusiast passionate about education, creativity,
+        and problem-solving. Eager to learn new technologies and contribute to
+        impactful projects in collaborative environments.
       </p>
-      <p><b>Tech:</b> ReactJS</p>
-      <!-- 🔗 INSERT LINKS -->
-      <a href="https://github.com/Mohit-Raj-Saxena/News-App" target="_blank">GitHub</a> |
-      <a href="https://news-app-one.netlify.app/" target="_blank">Live Demo</a>
-    </div>
+    </section>
 
-    <div class="project">
-      <h3>Checkmate</h3>
+    <section>
+      <h2>Why Me?</h2>
       <p>
-        Developed a real-time multiplayer chess game with live move synchronization
-        and interactive drag-and-drop gameplay.
+        I enjoy building real-world applications that combine clean UI,
+        scalable backend systems, and modern DevOps practices.
+        I actively contribute to open source and continuously improve my skills.
       </p>
-      <p><b>Tech:</b> Node.js, Express.js, Socket.io, Chess.js, EJS</p>
-      <!-- 🔗 INSERT LINKS -->
-      <a href="https://github.com/Mohit-Raj-Saxena/Checkmate" target="_blank">GitHub</a> |
-      <a href="https://checkmate-rljl.onrender.com" target="_blank">Live Demo</a>
-    </div>
+    </section>
 
-    <div class="project">
-      <h3>Luxira</h3>
-      <p>
-        Built a premium bag e-commerce platform with secure authentication,
-        admin-managed product uploads, and dynamic catalog rendering.
-      </p>
-      <p><b>Tech:</b> Node.js, Express.js, MongoDB, EJS, Tailwind CSS</p>
-      <!-- 🔗 INSERT LINKS -->
-      <a href="https://github.com/Mohit-Raj-Saxena/Luxira" target="_blank">GitHub</a> |
-      <a href="https://luxira.onrender.com" target="_blank">Live Demo</a>
-    </div>
+    <!-- EDUCATION -->
+    <section>
+      <h2>Education</h2>
 
-    <div class="project">
-      <h3>Deepfake Audio Detector</h3>
-      <p>
-        Developed an ML-powered Streamlit app to classify synthetic vs real audio,
-        with an interactive chatbot explaining detection concepts.
-      </p>
-      <p><b>Tech:</b> Python, Streamlit, TensorFlow/PyTorch, Librosa</p>
-      <!-- 🔗 INSERT LINKS -->
-      <a href="https://github.com/Mohit-Raj-Saxena/DeepFake_Chatbot_Ultimate_Version" target="_blank">GitHub</a> |
-      <a href="https://deepfakechatbotultimateversion-cqegciebexbfmpkt5xwfjf.streamlit.app/" target="_blank">Live Demo</a>
-    </div>
+      <div class="item">
+        <h3>JSS Academy of Technical Education, Noida</h3>
+        <p>B.Tech in Computer Science & Engineering (2021 – 2025)</p>
+        <p><b>GPA:</b> 7.99 / 10.0</p>
+      </div>
+    </section>
 
-  </section>
+    <!-- PROJECTS -->
+    <section>
+      <h2>Projects</h2>
 
-  <!-- OPEN SOURCE -->
-  <section>
-    <h2>Open Source Contributions</h2>
-    <p>
-      <b>Node.js Core Contributor</b> – Improved documentation and enhanced file
-      system API cross-references.
-    </p>
-    <!-- 🔗 INSERT PR LINK -->
-    <a href="https://github.com/nodejs/node/pull/60286" target="_blank">View Pull Request</a>
-  </section>
+      <div class="projects-grid">
+        <div class="project">
+          <div class="project-image">
+            <img src="images/news-journal.jpg" alt="News-Journal App Screenshot" onerror="this.src='https://via.placeholder.com/400x250/1e293b/3b82f6?text=News-Journal'">
+          </div>
+          <h3>News-Journal</h3>
+          <p>
+            Created a dynamic news application providing real-time headlines using
+            external APIs with category-based filtering and responsive UI.
+          </p>
+          <p><b>Tech:</b> ReactJS</p>
+          <div class="project-links">
+            <a href="https://github.com/Mohit-Raj-Saxena/News-App" target="_blank">GitHub</a>
+            <a href="https://news-app-one.netlify.app/" target="_blank">Live Demo</a>
+          </div>
+        </div>
 
-  <!-- INTERNSHIP -->
-  <section>
-    <h2>Internship</h2>
-    <div class="item">
-      <h3>Data Analyst Intern – Axtria India Pvt. Ltd.</h3>
-      <p>Noida | Jan 2025 – Jul 2025</p>
-      <p>
-        Worked on BRMS and QAutobot projects involving data analysis and
-        full-stack development.
-      </p>
-    </div>
-  </section>
+        <div class="project">
+          <div class="project-image">
+            <img src="images/checkmate.jpg" alt="Checkmate Chess Game Screenshot" onerror="this.src='https://via.placeholder.com/400x250/1e293b/3b82f6?text=Checkmate'">
+          </div>
+          <h3>Checkmate</h3>
+          <p>
+            Developed a real-time multiplayer chess game with live move synchronization
+            and interactive drag-and-drop gameplay.
+          </p>
+          <p><b>Tech:</b> Node.js, Express.js, Socket.io, Chess.js, EJS</p>
+          <div class="project-links">
+            <a href="https://github.com/Mohit-Raj-Saxena/Checkmate" target="_blank">GitHub</a>
+            <a href="https://checkmate-rljl.onrender.com" target="_blank">Live Demo</a>
+          </div>
+        </div>
 
-  <!-- ACHIEVEMENTS -->
-  <section>
-    <h2>Achievements</h2>
-    <ul>
-      <li>International Rank 4934 – International Mathematics Olympiad 2018</li>
-    </ul>
-  </section>
+        <div class="project">
+          <div class="project-image">
+            <img src="images/luxira.jpg" alt="Luxira E-commerce Screenshot" onerror="this.src='https://via.placeholder.com/400x250/1e293b/3b82f6?text=Luxira'">
+          </div>
+          <h3>Luxira</h3>
+          <p>
+            Built a premium bag e-commerce platform with secure authentication,
+            admin-managed product uploads, and dynamic catalog rendering.
+          </p>
+          <p><b>Tech:</b> Node.js, Express.js, MongoDB, EJS, Tailwind CSS</p>
+          <div class="project-links">
+            <a href="https://github.com/Mohit-Raj-Saxena/Luxira" target="_blank">GitHub</a>
+            <a href="https://luxira.onrender.com" target="_blank">Live Demo</a>
+          </div>
+        </div>
 
-  <!-- SKILLS -->
-  <section>
-    <h2>Skills</h2>
+        <div class="project">
+          <div class="project-image">
+            <img src="images/deepfake.jpg" alt="Deepfake Audio Detector Screenshot" onerror="this.src='https://via.placeholder.com/400x250/1e293b/3b82f6?text=Deepfake+Detector'">
+          </div>
+          <h3>Deepfake Audio Detector</h3>
+          <p>
+            Developed an ML-powered Streamlit app to classify synthetic vs real audio,
+            with an interactive chatbot explaining detection concepts.
+          </p>
+          <p><b>Tech:</b> Python, Streamlit, TensorFlow/PyTorch, Librosa</p>
+          <div class="project-links">
+            <a href="https://github.com/Mohit-Raj-Saxena/DeepFake_Chatbot_Ultimate_Version" target="_blank">GitHub</a>
+            <a href="https://deepfakechatbotultimateversion-cqegciebexbfmpkt5xwfjf.streamlit.app/" target="_blank">Live Demo</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <p><b>Programming:</b> C, C++, Python, JavaScript, SQL</p>
-    <p><b>Web:</b> HTML, CSS, React, Redux, Node.js, Express, MongoDB</p>
-    <p><b>ML & Data:</b> TensorFlow, PyTorch, Pandas, NumPy</p>
-    <p><b>DevOps:</b> Linux, Docker, Kubernetes, GitOps, Argo CD, GitHub Actions</p>
-    <p><b>Tools:</b> Git, GitHub, Streamlit, Postman, Netlify, Render</p>
-    <p><b>Interests:</b> Teamwork, Leadership, Public Speaking, Painting, Chess</p>
-  </section>
+    <!-- OPEN SOURCE -->
+    <section>
+      <h2>Open Source Contributions</h2>
+      <div class="opensource-content">
+        <p>
+          <b>Node.js Core Contributor</b> – Improved documentation and enhanced file
+          system API cross-references.
+        </p>
+        <a href="https://github.com/nodejs/node/pull/60286" target="_blank">View Pull Request</a>
+      </div>
+    </section>
 
-  <footer>
-    <p>© 2026 Mohit Raj Saxena</p>
-  </footer>
+    <!-- INTERNSHIP -->
+    <section>
+      <h2>Internship</h2>
+      <div class="item">
+        <h3>Data Analyst Intern – Axtria India Pvt. Ltd.</h3>
+        <p>Noida | Jan 2025 – Jul 2025</p>
+        <p>
+          Worked on BRMS and QAutobot projects involving data analysis and
+          full-stack development.
+        </p>
+      </div>
+    </section>
 
+    <!-- SKILLS -->
+    <section>
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <p><b>Programming:</b> C, C++, Python, JavaScript, SQL</p>
+        </div>
+        <div class="skill-item">
+          <p><b>Web:</b> HTML, CSS, React, Redux, Node.js, Express, MongoDB</p>
+        </div>
+        <div class="skill-item">
+          <p><b>ML & Data:</b> TensorFlow, PyTorch, Pandas, NumPy</p>
+        </div>
+        <div class="skill-item">
+          <p><b>DevOps:</b> Linux, Docker, Kubernetes, GitOps, Argo CD, GitHub Actions</p>
+        </div>
+        <div class="skill-item">
+          <p><b>Tools:</b> Git, GitHub, Streamlit, Postman, Netlify, Render</p>
+        </div>
+        <div class="skill-item">
+          <p><b>Interests:</b> Teamwork, Leadership, Public Speaking, Painting, Chess</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Mohit Raj Saxena</p>
+    </footer>
+  </div>
+
+  <div class="scroll-top"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
